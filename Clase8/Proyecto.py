@@ -159,7 +159,16 @@ while opcion != 3:
             print("------")
 
     elif opcion == 3:
-        print ("Hasta pronto")
+        print ("saliendo del sistema")
+        print("===== RESUMEN FINAL =====")
+        contador = 0
+        promedio = 0
+        for x in estudiantes:
+            contador = contador + 1
+            promedio = promedio + x["promedio"]
+        print(f"Total de estudiantes registrados: {contador}")
+        print(f"El promedio del grupo es: ({promedio/contador})")
+        print("Programa finalizado")
         break
     else:
         print("Seleccione una opcion valida")
