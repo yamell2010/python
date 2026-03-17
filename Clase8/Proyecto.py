@@ -118,43 +118,6 @@ menu = """
 2. Mostrar todos los estudiantes
 3. Salir
 """
-"""
-print(menu)
-estudiantes = []
-estudiante = {}
-opcion = 0
-while opcion != 3:
-    opcion = int(input("Seleccione una opcion: "))
-    if opcion == 1:
-        estudiante["nombre"] = input("ingrese su nombre: ")
-        estudiante["edad"] = int(input("digite su edad: "))
-        estudiante["nota1"] = float(input("digite la primera nota: "))
-        estudiante["nota2"] = float(input("digite la segunda nota: "))
-        estudiante["nota3"] = float(input("digite la tercera nota: "))
-        estudiante["promedio"] = (estudiante["nota1"]+ estudiante["nota2"]+ estudiante["nota3"])/3
-        if estudiante["promedio"] < 3.0:
-            estudiante["estado"] = "reprobado"
-        elif estudiante["promedio"] >= 3.0 and estudiante["promedio"] < 4.0:
-            estudiante["estado"] = "recuperacion"
-        elif estudiante["promedio"] > 4.0:
-            estudiante["estado"] = "Aprobado" 
-        print(f"Nombe: {estudiante["nombre"]}")
-        print(f"Edad: {estudiante["edad"]}")
-        print(f"Promedio: {estudiante["promedio"]}")
-        print(f"Estado: {estudiante["estado"]}")
-        estudiantes.append(estudiante)
-    elif opcion == 2:
-        for x in estudiantes:
-            print(estudiante["nombre"])
-            print(estudiante["edad"])
-            print(estudiante["promedio"])
-            print(estudiante["estado"])
-    elif opcion == 3:
-        print ("Hasta pronto")
-        break
-    else:
-        print("Seleccione una opcion valida")
-"""
 print(menu)
 estudiantes = []
 estudiante = {}
