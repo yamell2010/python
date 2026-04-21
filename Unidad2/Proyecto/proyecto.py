@@ -387,3 +387,10 @@ if __name__ == "__main__":
 
     print(factura.pagar(pago1))
     print(factura.pagar(pago2))
+
+"""
+Se crea una clase abstracta Persona, de la cual heredan Veterinario, Cliente y Recepcionista, aplicando herencia.
+Un Cliente tiene varias Mascotas (esto es agregación, porque pueden existir por separado).
+La clase Consulta conecta a Mascota y Veterinario (asociación) y además crea sus propios Tratamientos (composición).
+Para los pagos, existe la clase abstracta MetodoPago con varias formas de pago (polimorfismo), que la Factura usa sin importar cuál método se elija.
+"""
