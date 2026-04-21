@@ -16,7 +16,7 @@ class Mesero(Empleado):
         return 1200
     
 class Chef(Empleado):
-    def calcular_salario(reslf):
+    def calcular_salario(self):
         return 2000
     
 #Cliente y agregación con Pedido
