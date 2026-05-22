@@ -74,3 +74,25 @@ def nombre_largo_fun ():
         l.append(i.upper())
     print(l)
 nombre_largo_fun()
+
+
+
+precios = [10,20,30,40,50]
+precios_iva = list(map(lambda x:x*1.19, precios))
+print(precios_iva)
+
+
+#-----------------------------------------------------
+#FILTER
+
+numeros = [1,2,3,4,5,6,7,8,9,1]
+
+pares = list(filter(lambda x: x % 2 == 0, numeros))
+print(pares)
+
+#------------------------------------------------------
+edades = [15, 22, 30, 17, 25, 19]
+
+mayores_edad = list(filter(lambda x: x >= 18, edades))
+
+print(mayores_edad)
