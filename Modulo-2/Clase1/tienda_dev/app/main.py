@@ -49,5 +49,6 @@ def crear_producto(producto: ProductoCreate):
 def listar_productos():
     return{
         "total": len(producto_db),
-        "productos": producto_db
+        "productos": producto_db,
+        "mensaje" : "esos son todos los productos"
     }
