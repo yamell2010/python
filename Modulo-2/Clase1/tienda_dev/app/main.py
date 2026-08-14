@@ -37,11 +37,11 @@ def health_check():
         "aplicacion": "Tienda Dev Senior"
     }
 
-@app.post("/prodcutos")
+@app.post("/productos")
 def crear_producto(producto: ProductoCreate):
     producto_db.append(producto)
     return{
-        "mensaje": "Prodcuto creado exitosamente",
+        "mensaje": "Producto creado exitosamente",
         "producto": producto
     }
 
